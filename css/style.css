@@ -22,12 +22,13 @@ li{
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 
 .header{
     background-color: #e8ebf1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
 }
 
 .container{
@@ -160,4 +161,24 @@ body{
 
 /* slider */
   
+.slider{
+    background-color: #81e4ed;
+    padding: 20px 0 40px;
+}
 
+.slider__item{
+    background-image: url(../images/slider-bg.jpg);
+    min-height: 440px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider__item-title{
+    font-size: 50px;
+    color: #fff;
+    width: 300px;
+    margin-left: 60px;
+    font-weight: 700;
+    padding-top: 90px;
+}
