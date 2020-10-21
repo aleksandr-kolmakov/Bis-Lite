@@ -1,9 +1,7 @@
+
 $(function(){
-
-});
-
-$(document).ready(function(){
-    $('.your-class').slick({
-      setting-name: setting-value
+    $('.slider__inner').slick({
+      arrows: false,
+      dots: true,
     });
   });
