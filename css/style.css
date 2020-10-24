@@ -104,6 +104,7 @@ body{
     border-top: none;
     box-shadow: 0px 5px 0px 0px rgba(42, 172, 200, 0.004);
     padding: 10px 5px;
+    z-index: 1;
 }
 
 .drop-down__list li{
@@ -206,5 +207,49 @@ body{
     background-color: #fff;
 }
 
+/* items */
+.items{
+    background-color: #e8ebf1;
+    padding: 60px 0 50px;
+}
 
+.items__inner{
+    display: flex;
+    justify-content: space-between;
+}
 
+.item{
+    width: 225px;
+    font-family: 'arial', sans-serif;
+}
+
+.item__title{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    padding-top: 10px;
+    padding-left: 60px;
+    padding: 10px 0 0 60px;
+    margin-bottom: 30px;
+
+    position: relative;
+}
+
+.item__icons{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #2aacc8;
+    border-radius: 50%;
+    
+}
+
+.item__text{
+
+}
+
+.item__link{
+
+}
