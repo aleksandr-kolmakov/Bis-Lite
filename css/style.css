@@ -23,6 +23,7 @@ li{
 
 body{
     font-family: 'Lato', sans-serif;
+    font-size: 15px;
 }
 
 
@@ -160,7 +161,7 @@ body{
     margin-left: 20px;
 }
 
-/* slider */
+/*======================= slider =====================*/
   
 .slider{
     background-color: #81e4ed;
@@ -184,7 +185,7 @@ body{
     padding-top: 90px;
 }
 
-/* dots */
+/*====================== dots ======================*/
 .slick-dots li button::before{
     display: none;
 }
@@ -207,10 +208,11 @@ body{
     background-color: #fff;
 }
 
-/* items */
+/*==================== items ====================== */
 .items{
     background-color: #e8ebf1;
     padding: 60px 0 50px;
+    border-bottom: 1px solid #d9d9d9;
 }
 
 .items__inner{
@@ -224,7 +226,6 @@ body{
 }
 
 .item__title{
-    font-size: 15px;
     line-height: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -243,13 +244,98 @@ body{
     height: 40px;
     background-color: #2aacc8;
     border-radius: 50%;
-    
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telegram__icons{
+    margin-left: 5px;
 }
 
 .item__text{
+    font-family: 'arial', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #363636;
+    margin-bottom: 30px;
 
 }
 
 .item__link{
+    font-family: 'arial', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #2aacc8;
+    padding-left: 15px;
+    position: relative;
+}
 
+.item__link::before{
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/arrow.svg);
+    left: 0;
+    top: 5px;
+    width: 5px;
+    height: 7px;
+}
+
+/* ======================works========================================= */
+
+.works__title{
+    font-family: 'arial', sans-serif;
+    padding: 25px 0 15px 40px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.works__title::before{
+    content: '';
+    position: absolute;
+    background-image: url(../images/slider/cursor.svg);
+    left: 0;
+    top: 20px;
+    width: 14px;
+    height: 24px;
+}
+
+.works__inner{
+    padding: 20px 0 40px;
+    border-top: 1px solid #dfe1e5;
+    border-bottom: 1px solid #dfe1e5;
+}
+
+.slick-arrow{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #81e4ed;
+}
+
+.slick-arrow::before{
+    display: none;
+}
+
+.slick-arrow:hover, .slick-arrow:focus{
+    background-color: #81e4ed;
+}
+
+
+
+.slick-next{
+    right: 0;
+    top: -27px;
+}
+
+.slick-prev{
+    right: 31px;
+    left: auto;
+    top: -27px;
 }
