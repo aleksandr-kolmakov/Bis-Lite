@@ -339,3 +339,43 @@ body{
     left: auto;
     top: -27px;
 }
+
+
+.works__inner-item{
+    /* центрирование элементов */
+    text-align: center;
+}
+
+.works__inner-box{
+    display: inline-block;
+    position: relative;
+    
+    
+}
+
+.works__inner-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    background-color: #2aacc8;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.works__inner-link a{
+    margin: 0 15px;
+}
+
+.works__inner-box:hover .works__inner-link{
+    height: 80px;
+}
+
+/* выравнивание слайдера по ширине */
+.slick-list{
+    margin-left: -15px;
+    margin-right: -15px;
+}
